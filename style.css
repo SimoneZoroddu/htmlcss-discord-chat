@@ -20,12 +20,6 @@ footer {
 .background {
     display: flex;
     background-color: #141318;
-    }
-
-
-main {
-    width: 100vw;
-    height: 92vh;
 }
 
 .sidebar {
@@ -33,24 +27,23 @@ main {
     display: flex;
     flex-direction: column;
     margin: none;
+ 
+    .server_discord {
+        width: 70px;
+        height: 80px;
+        background: none;
+        border: none;
+        padding: 10px;
 
-}
+        img {
+            border-radius: 50%;
+        }
 
-.server_discord {
-    width: 70px;
-    height: 80px;
-    background: none;
-    border: none;
-    padding: 10px;
-
-    img {
-        border-radius: 50%;
-    }
-
-    &:first-child img {
-    border-radius: 0%;
-}
-    .left_bar {
+        &:first-child img {
+        border-radius: 0%;
+        }
+        
+        .left_bar {
         background-color: rgb(255, 255, 255);
         position: absolute;
         left: 0;
@@ -59,7 +52,13 @@ main {
         width: 5px;
         height: 50px;
         border-radius: 0px 20px 20px 0px;
+        }
+    }
 }
+
+main {
+    width: 100vw;
+    height: 92vh;
 }
 
 .main_body {
@@ -77,30 +76,32 @@ main {
     .add_and_search {
         width: 100%;
         display: flex;
-        gap: 10px;
         justify-content: space-between;
         background: none;
 
+        .search:hover {
+            cursor: pointer;
+        }
         .search {
-            flex: 5%;
+            display: flex;
             justify-content: center;
-            font-size: 20px;
-            line-height: 1;
-            margin: 20px;
-            padding: 0;
-            border: solid;
-            background-color: #373a43;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin: 0px 20px;
             color: white;
+            background-color: #373a43;
         }
 
         .add_friends {
-            flex: 80%;
             background-color: #373a43;
             color: white;
             border: 2px;
             border-radius: 20px;
-            padding: 0px 5vh;
+            padding: 0px 5px;
             margin: 0px 10px;
+            flex-grow: 1;
         }
     }
     

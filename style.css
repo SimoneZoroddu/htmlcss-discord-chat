@@ -3,3 +3,48 @@
     bottom: 0;
     box-sizing: border-box;
 }
+
+img {
+    width: 100%;
+}
+
+.background {
+    height: 100vh;
+    background-color: #141318;
+    padding: 0px;
+}
+
+.sidebar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: none;
+
+}
+
+.server_discord {
+    width: 70px;
+    height: 80px;
+    background: none;
+    border: none;
+    padding: 10px;
+
+    img {
+        border-radius: 50%;
+    }
+
+    &:first-child img {
+    border-radius: 0%;
+}
+}
+
+.left_bar {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 0;
+    top: 15px;
+    content: solid;
+    width: 5px;
+    height: 50px;
+    border-radius: 0px 20px 20px 0px;
+}

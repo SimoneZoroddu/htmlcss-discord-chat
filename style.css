@@ -8,11 +8,24 @@ img {
     width: 100%;
 }
 
+body {
+    width: 100vw;
+}
+
+footer {
+    width: 100vw;
+    height: 8vh;
+}
+
 .background {
     display: flex;
-    height: 100vh;
     background-color: #141318;
-    padding: 0px;
+    }
+
+
+main {
+    width: 100vw;
+    height: 92vh;
 }
 
 .sidebar {
@@ -37,17 +50,16 @@ img {
     &:first-child img {
     border-radius: 0%;
 }
+    .left_bar {
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        left: 0;
+        top: 15px;
+        content: solid;
+        width: 5px;
+        height: 50px;
+        border-radius: 0px 20px 20px 0px;
 }
-
-.left_bar {
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    left: 0;
-    top: 15px;
-    content: solid;
-    width: 5px;
-    height: 50px;
-    border-radius: 0px 20px 20px 0px;
 }
 
 .main_body {
@@ -63,19 +75,26 @@ img {
     }
 
     .add_and_search {
+        width: 100%;
         display: flex;
+        gap: 10px;
+        justify-content: space-between;
         background: none;
 
         .search {
+            flex: 5%;
+            justify-content: center;
+            font-size: 20px;
+            line-height: 1;
+            margin: 20px;
+            padding: 0;
+            border: solid;
             background-color: #373a43;
             color: white;
-            border: 2px;
-            height: 25px;
-            width: 25px;
-            border-radius: 50%;
         }
 
         .add_friends {
+            flex: 80%;
             background-color: #373a43;
             color: white;
             border: 2px;
@@ -89,6 +108,7 @@ img {
             display: flex;
             flex-direction: column;
             gap: 1px;
+            padding: 10px 1px;
 
             .friend_cards {
                 display: flex;
@@ -126,4 +146,42 @@ img {
             }
         }
     
+}
+
+.footer_bar {
+    background-color: #2d2d35;
+    width: 100vw;
+    height: 8vh;
+
+    .my_account {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px;
+        background-color: #2d2d35;
+        
+        
+
+        a { display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            font-size: 30px;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            position: relative;
+
+            img {
+                
+                height: 30px;
+                width: 30px;
+                border-radius: 50%;
+            }
+
+            span {
+                display: block;
+            }
+        }
+    }
 }

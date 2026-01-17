@@ -27,7 +27,7 @@ footer {
     display: flex;
     flex-direction: column;
     margin: none;
- 
+    
     .server_discord {
         width: 70px;
         height: 80px;
@@ -53,6 +53,14 @@ footer {
         height: 50px;
         border-radius: 0px 20px 20px 0px;
         }
+    }
+
+    img:hover {
+        transition: 2s;
+        translate: 2px;
+        scale: 1.1;
+        box-shadow: 0px 3px 10px #2d2d35;
+
     }
 }
 
@@ -138,6 +146,18 @@ main {
                     position: absolute;
                     right: 0;
                     top: 2px;
+                }
+
+                .status {
+                    color: #2d2d35;
+                    height: 12px;
+                    width: 12px;
+                    border: solid;
+                    border-radius: 50%;
+                    background-color: rgb(255, 0, 0);
+                    position: absolute;
+                    left: 40px;
+                    top: 30px;
                 }
             }
 
